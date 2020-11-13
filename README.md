@@ -15,3 +15,5 @@ A collection of python3 scripts for accessing HC2 family temperature / humidity 
 <li><strong>Blue:</strong> TxD - connect to adapter's RxD</li>
 </ul>
 <p><strong>*</strong> Note that some cheap adapters have messed up RxD and TxD markings so if the script does not work try connecting them otherwise...</p>
+
+<p>If you have lamp/lemp stack already installed, you can use read_sensor.py in a cron job to collect sensor readings in a mysql table. data.php retrives the last 24h' readings from the mysql table and index.php uses them to create a nice chart.</p>
