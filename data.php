@@ -19,7 +19,7 @@
 		die($e->getMessage());
 	}
 
-	$stmt=$dbcon->prepare("SELECT `date_time`, `temp`, `dp`, `rh` FROM `sensor1` ORDER BY `date_time` DESC LIMIT 1440");
+	$stmt=$dbcon->prepare("SELECT `date_time`, `temp`, `dp`, `rh` FROM `table` ORDER BY `date_time` DESC LIMIT 24");
 	$stmt->execute();
 	$json = [];
 	while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
